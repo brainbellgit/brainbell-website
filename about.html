@@ -30,7 +30,7 @@
 										<li><a href="index.html">Home</a></li>
 										<li><a href="features.html">Features</a></li>
 										<li class="current_page_item"><a href="about.html">About</a></li>
-										<li><a href="#contact">Contact</a></li>
+										<li><a href="contact.html">Contact</a></li>
 									</ul>
 								</nav>
 							</div>
@@ -118,21 +118,49 @@
 								@media (max-width: 768px) {
 									.story-section {
 										flex-direction: column-reverse;
-										padding: 40px 5%;
+										padding: 30px 4%;
 									}
 
 									.story-text {
 										padding-right: 0;
+										width: 100%;
 									}
 
 									.story-text h2 {
-										font-size: 2rem;
+										font-size: 1.8rem;
+										margin-bottom: 12px;
+										line-height: 1.2;
+									}
+
+									.story-text em {
+										font-size: 1rem;
+										margin-bottom: 16px;
+										line-height: 1.4;
+									}
+
+									.story-text p {
+										font-size: 0.95rem;
+										line-height: 1.6;
+										margin-bottom: 16px;
+									}
+
+									.story-image {
+										width: 100%;
+										margin-bottom: 20px;
 									}
 
 									.story-image-wrapper {
 										width: 100%;
-										height: 300px;
-										margin-bottom: 30px;
+										max-width: 100%;
+										height: auto;
+										min-height: 250px;
+										margin-bottom: 20px;
+									}
+
+									.story-image img {
+										width: 100%;
+										height: auto;
+										object-fit: contain;
 									}
 								}
 							</style>
@@ -140,27 +168,32 @@
 							<section class="story-section">
 								<div class="story-text">
 									<h2>The Story Behind BrainBell</h2>
-									<em>Because remembering everything shouldn't feel like something you have to do alone.</em>
+									<em>Because remembering everything shouldn't be something you have to do alone.</em>
 
-									<p><strong>It starts quietly.</strong></p>
+									<p>It often starts quietly.</p>
+
 									<p>
 										A calendar you meant to check.<br>
 										A pill you thought you'd already taken.<br>
-										A nap time that slipped past during the third load of laundry.<br>
-										A payment deadline that came and went.
+										A nap time that slipped away.<br>
+										A bill that went unpaid—again.
 									</p>
 
-									<p><strong>It doesn't happen because we're careless. It happens because we're carrying too much.</strong></p>
+									<p>Not because you don't care.</p>
+
+									<p>But because your mind is already carrying so much.</p>
 
 									<p>
-										Life today is full—full of expectations, noise, responsibilities, and distractions. Whether you're navigating the quiet of aging alone, the beautiful chaos of raising a child, or the daily sprint of work, study, and self-care, your mind is doing its best to hold it all.
+										Life today is overflowing—with expectations, messages, responsibilities, and noise. We're all trying to keep pace with the constant pull of "don't forget." Whether you're caring for family, managing your health, juggling work and study, or simply trying to stay grounded, it's a lot to hold on your own.
 									</p>
 
 									<p><strong>That's why we created BrainBell.</strong></p>
 
 									<p>
-										<strong>BrainBell</strong> is more than a reminder app—it's a quiet companion in your corner. A soft voice in the background that keeps track of the little things, so you can focus on what really matters.
+										<strong>BrainBell</strong> isn't just another reminder app—it's a calm, reliable companion designed to lighten your mental load. It helps you remember the things that matter most, in the moments you need them, so you can breathe easier, stay present, and focus on living—not just managing.
 									</p>
+
+									<p>Because your mind deserves a little help, and your peace of mind deserves to come first.</p>
 								</div>
 
 								<div class="story-image">
@@ -176,88 +209,6 @@
 			<!-- Footer Wrapper -->
 				<div id="footer-wrapper">
 					<footer id="footer" class="container">
-						<div class="row">
-							<div class="col-3 col-6-medium col-12-small">
-								<section>
-									<h2>Health Features</h2>
-									<ul class="divided">
-										<li><a href="#health">Medication Reminders</a></li>
-										<li><a href="#health">Doctor Appointments</a></li>
-										<li><a href="#health">Health Metrics Tracking</a></li>
-										<li><a href="#health">Chronic Condition Management</a></li>
-										<li><a href="#health">Wellness Routines</a></li>
-										<li><a href="#health">Health Check-ups</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-3 col-6-medium col-12-small">
-								<section>
-									<h2>Pet Care</h2>
-									<ul class="divided">
-										<li><a href="#pets">Feeding Schedules</a></li>
-										<li><a href="#pets">Vet Appointments</a></li>
-										<li><a href="#pets">Grooming Reminders</a></li>
-										<li><a href="#pets">Vaccination Tracking</a></li>
-									</ul>
-								</section>
-								<section>
-									<h2>Mindfulness</h2>
-									<ul class="divided">
-										<li><a href="#mindfulness">Meditation Reminders</a></li>
-										<li><a href="#mindfulness">Journaling Prompts</a></li>
-										<li><a href="#mindfulness">Breathing Exercises</a></li>
-										<li><a href="#mindfulness">Self-Care Activities</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-6 col-12-medium imp-medium">
-								<section>
-									<h2><strong>Brainbell</strong> - Your Life Assistant</h2>
-									<p>Brainbell is more than just a reminder app - it's your comprehensive life management companion. 
-									Designed to help you stay organized, healthy, and mindful across all aspects of your life. 
-									From medication management to pet care, parenting support to financial wellness, Brainbell keeps 
-									you on track with intelligent reminders and personalized insights.</p>
-								</section>
-								<section>
-									<h2>Get in touch</h2>
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-small">
-												<dl class="contact">
-													<dt>Twitter</dt>
-													<dd><a href="#">@brainbell-app</a></dd>
-													<dt>Facebook</dt>
-													<dd><a href="#">facebook.com/brainbell</a></dd>
-													<dt>WWW</dt>
-													<dd><a href="#">brainbell.app</a></dd>
-													<dt>Email</dt>
-													<dd><a href="#">hello@brainbell.app</a></dd>
-												</dl>
-											</div>
-											<div class="col-6 col-12-small">
-												<dl class="contact">
-													<dt>Address</dt>
-													<dd>
-														Brainbell Inc.<br />
-														Innovation District<br />
-														Tech City, TC 12345
-													</dd>
-													<dt>Phone</dt>
-													<dd>(555) 123-4567</dd>
-												</dl>
-											</div>
-										</div>
-									</div>
-								</section>
-							</div>
-							<div class="col-12">
-								<div id="copyright">
-									<ul class="menu">
-										<li>&copy; Brainbell Inc. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
 					</footer>
 				</div>
 
