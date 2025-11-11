@@ -54,8 +54,10 @@
 
 								.contact-page-wrapper {
 									width: 100%;
+									max-width: 100%;
 									display: flex;
 									flex-direction: column;
+									box-sizing: border-box;
 								}
 
 								/* Top Section - Teal Background */
@@ -68,6 +70,9 @@
 									flex-wrap: wrap;
 									min-height: 400px;
 									position: relative;
+									width: 100%;
+									max-width: 100%;
+									box-sizing: border-box;
 								}
 
 								.contact-top-title {
@@ -91,9 +96,9 @@
 								}
 
 								.contact-top-left img {
+									width: 100%;
 									max-width: 100%;
 									height: auto;
-									max-height: 500px;
 									object-fit: contain;
 								}
 
@@ -108,30 +113,33 @@
 								}
 
 								.contact-top-right img {
+									width: 100%;
 									max-width: 100%;
 									height: auto;
-									max-height: 400px;
 									object-fit: contain;
 								}
 
 								.contact-top-right-text {
 									position: absolute;
-									top: 35%;
+									top: 5%;
 									left: 50%;
-									transform: translate(-50%, -50%);
+									transform: translateX(-50%);
 									text-align: center;
 									color: #333;
 									font-family: 'Inter', sans-serif;
 									z-index: 5;
 									background-color: rgba(255, 255, 255, 0.9);
-									padding: 20px 30px;
+									padding: 1.2vw 2vw;
 									border-radius: 12px;
 									box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+									width: 80%;
+									max-width: 300px;
+									box-sizing: border-box;
 								}
 
 								.contact-top-right-text p {
 									margin: 8px 0;
-									font-size: 1rem;
+									font-size: clamp(0.85rem, 1.2vw, 1rem);
 									line-height: 1.6;
 								}
 
@@ -153,6 +161,9 @@
 									padding: 80px 5%;
 									display: flex;
 									flex-direction: column;
+									width: 100%;
+									max-width: 100%;
+									box-sizing: border-box;
 								}
 
 								.contact-greeting {
@@ -170,6 +181,9 @@
 									justify-content: space-between;
 									flex-wrap: wrap;
 									gap: 40px;
+									width: 100%;
+									max-width: 100%;
+									box-sizing: border-box;
 								}
 
 								.contact-bottom-left {
@@ -181,9 +195,9 @@
 								}
 
 								.contact-bottom-left img {
+									width: 100%;
 									max-width: 100%;
 									height: auto;
-									max-height: 650px;
 									object-fit: contain;
 								}
 
@@ -335,20 +349,52 @@
 									.contact-top-right {
 										margin-top: 20px;
 										width: 100%;
+										min-width: 0;
+										flex: 0 0 auto;
+										max-width: 100%;
+									}
+
+									.contact-top-left img {
+										width: 100%;
+										max-width: 100%;
+										height: auto;
+										object-fit: contain;
+										display: block;
+									}
+
+									.contact-top-right {
+										position: relative;
+										min-width: 0;
+									}
+
+									.contact-top-right img {
+										width: 100%;
+										max-width: 100%;
+										height: auto;
+										object-fit: contain;
+										display: block;
 									}
 
 									.contact-top-right-text {
-										padding: 15px 20px;
-										font-size: 0.9rem;
+										position: absolute;
+										top: 5%;
+										left: 50%;
+										transform: translateX(-50%);
+										margin-top: 0;
+										padding: 12px 16px;
+										width: 85%;
+										max-width: 100%;
+										box-sizing: border-box;
 									}
 
 									.contact-top-right-text p {
 										margin: 6px 0;
-										font-size: 0.9rem;
+										font-size: clamp(0.75rem, 3vw, 0.9rem);
 									}
 
 									.contact-bottom-section {
 										padding: 40px 4%;
+										box-sizing: border-box;
 									}
 
 									.contact-greeting {
@@ -358,6 +404,27 @@
 
 									.contact-bottom-content {
 										flex-direction: column;
+										width: 100%;
+									}
+
+									.contact-bottom-left {
+										width: 100%;
+										min-width: 0;
+										flex: 0 0 auto;
+										max-width: 100%;
+									}
+
+									.contact-bottom-left img {
+										width: 100%;
+										max-width: 100%;
+										height: auto;
+										object-fit: contain;
+										display: block;
+									}
+
+									.contact-bottom-right {
+										width: 100%;
+										min-width: 0;
 									}
 
 									.contact-bottom-right h2 {
@@ -379,6 +446,23 @@
 
 									.contact-form-group {
 										margin-bottom: 15px;
+									}
+								}
+
+								@media (max-width: 360px) {
+									.contact-top-section {
+										padding: 30px 3%;
+									}
+
+									.contact-bottom-section {
+										padding: 30px 3%;
+									}
+
+									.contact-top-left img,
+									.contact-top-right img,
+									.contact-bottom-left img {
+										width: 100% !important;
+										max-width: 100% !important;
 									}
 								}
 							</style>
